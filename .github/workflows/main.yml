@@ -1,4 +1,4 @@
-name: Push-to-EC2 instance
+name: Deploy to EC2
 
 on:
   push:
@@ -11,10 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Execute remote SSH commands using password
-        uses: appleboy/ssh-action@v1
+      - name: Checkout the code
+        uses: actions/checkout@v2
+
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v1.2.0
         with:
-          host: 172-31-38-158
+          host: 172.31.38.158
           username: ubuntu
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
