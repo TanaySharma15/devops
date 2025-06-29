@@ -7,7 +7,7 @@ export default function Home() {
         Thank you for inspiring us with your dedication, your passion for
         teaching, and your relentless energy. Wishing you a joyful, successful,
         and fulfilling year ahead! 🥳
-        <b>Thanks sir</b>
+        <b>Thanks sir very much</b>
       </p>
     </main>
   );
