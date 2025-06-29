@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Debug SSH key (TEMP)
+        run: echo "${{ secrets.PRIVATE_SSH_KEY }}" | head -n 5
+
       - name: Checkout the code
         uses: actions/checkout@v2
 
