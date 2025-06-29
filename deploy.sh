@@ -1,5 +1,5 @@
 cd devops
-git pull origin main --rebase
+git pull origin main 
 npm install
 npm run build
 npm run start
